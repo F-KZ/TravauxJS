@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Cookie cookie</title>
+</head>
+<body>
+    <h1>Création de <span>Cookies</span></h1>
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <label for="value">Son nom</label>
+                <input type="text"
+                id="value"
+                name="name"
+                autocomplete="off"
+                required >
+            
+            </div>
+            <div class="input-group">
+                <label for="value">Sa valeur</label>
+                <input type="text"
+                id="value"
+                name="value"
+                autocomplete="off"
+                required >
+            
+            </div>
+            <div class="btns-container">
+            <div class="btns-container">
+                <button type="submit" class="create-cookie-btn">Créer</button>
+                <button type="button" class="display-cookie-btn">Afficher</button>
+                
+            </div>
+            </div>
+        </form>
+        <p class="info-txt"></p>
+        <ul class="cookies-list"></ul>
+    </div>
+    <div class="toasts-container"></div>
+    <script src="app.js"></script>
+</body>
+</html>

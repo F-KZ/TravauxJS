@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height:100vh;
+    background: linear-gradient(to right,  blue , pink);
+    padding: clamp(20px, 5vh, 50px) 10px 10px;
+}
+
+.container {
+    max-width: 850px;
+    background:pink;
+    border:1px solid black;
+    padding:25px;
+    margin:0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+h1 span {
+    font-weight: 700;
+}
+
+.inputs-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inputs-container label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding:10px;
+}
+
+.inputs-container input {
+    min-width: 350px;
+    font-size: 18px;
+    padding:15px;
+    border:none;
+    border-bottom: 1px solid #333333;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+}
+
+.inputs-container input:focus {
+    outline: 1px solid #333333;
+}
+
+.input-group:nth-child(2) {
+    margin-left:20px;
+}
+
+form button {
+
+    font-size: 20px;
+    min-width: 200px;
+    margin: 40px auto;
+    display: block;
+    padding: 10px;
+    border:none;
+    font-weight: 700;
+    border-radius: 5px;
+    color:#333333;
+    cursor: pointer;
+    background: yellowgreen;
+    box-shadow: 0 2x 3px rgba(0, 0, 0, 0.5);
+
+
+}
+
+form button:hover {
+    background: yellow;
+
+}
+
+.info {
+    text-align: center;
+}
+
+.bmi-value {
+    font: size 45px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.result {
+    font-size: 20px;
+}
+
+@media (max-width:800px) {
+    .container {
+        max-width:600px;
+    }
+
+    .inputs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input-group:nth-child(2) {
+        margin-top: 30px;
+        margin-left:0;
+    }
+}
+
+@media (max-width:500px) {
+    .input-group {
+        width:100%
+    }
+    .input-group input {
+        width:100%;
+        min-width:auto;
+    }
+    
+}
