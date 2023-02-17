@@ -1,16 +1,23 @@
 const slides = [...document.querySelectorAll(".slide")];
 
 const sliderData = {
+  locked: false,
   direction: 0,
   slideOutIndex: 0,
   slideInIndex: 0,
 };
 
 const directionButtons = [...document.querySelectorAll(".direction-btn")];
+
 directionButtons.forEach((btn) => btn.addEventListener("click", handleClick));
 
 function handleClick(e) {
+  if (sliderData.locked) return;
+  sliderData.locked = true;
+
   getDirection(e.target);
+
+  slideOut();
 }
 
 function getDirection(btn) {
